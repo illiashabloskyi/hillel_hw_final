@@ -1,0 +1,100 @@
+@import "../assets/variables.scss";
+
+//TODO: Footer
+#footer{
+  padding: 30px;
+  background-color: $color-bg-section;
+  @media(min-width: $display-sm){
+    display: grid;
+    grid-template-areas:
+    "line line line"
+    "addres . copyrite"
+    "contacts . . ";
+    grid-template-columns: auto 1fr auto;
+    padding: 30px 60px;
+  }
+  @media(min-width: $display-bg){
+    padding: 30px 160px;
+  }
+}
+
+.footer__dot_separator{
+  background: $color-navigation-text;
+}
+
+.footer__line{
+  min-width: 315px;
+  height: 2px;
+  background: $color-publications-line;
+  margin-bottom: 30px;
+  grid-area: line;
+}
+
+.footer__addres{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 21px;
+  grid-area: addres;
+  @media(min-width: $display-sm){
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 0;
+  }
+}
+
+.adress__map{
+  display: inline-block;
+  font-size: 16px;
+}
+
+.map{
+  font-size: 12px;
+  margin-top: 10px;
+  @media(min-width: $display-sm){
+    margin-top: 0;
+  }
+}
+
+.footer__contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: contacts;
+  @media(min-width: $display-sm){
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 21px;
+  }
+}
+
+.footer__phone{
+  font-weight: 700;
+  font-size: 16px;
+  color: $color-footer-phone;
+  margin: 10px 0;
+}
+
+.email{
+  text-transform: lowercase;
+}
+
+#copyrite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  grid-area: copyrite;
+  @media(min-width: $display-sm){
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+
+.copyrite{
+  color: $color-navigation-text;
+  margin: 0;
+}

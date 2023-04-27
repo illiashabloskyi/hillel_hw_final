@@ -1,0 +1,105 @@
+@import "../assets/variables.scss";
+
+// TODO: Services
+.container__servises {
+  padding-left: 30px;
+  padding-right: 30px;
+  @media (min-width: $display-sm) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media (min-width: $display-bg) {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+
+.section__link {
+  display: inline-block;
+  color: $color-section-brand;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.section__title {
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 10px 0 0;
+  font-weight: 700;
+  font-size: 30px;
+  @media (min-width: $display-sm) {
+    font-size: 38px;
+  }
+}
+
+.services__wrapper {
+  @media (min-width: $display-sm) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.services__item {
+  @media (min-width: $display-sm) {
+    width: 45%;
+    margin-right: 60px;
+  }
+  @media (min-width: $display-smd) {
+    width: 28%;
+    margin-right: 60px;
+  }
+  @media (min-width: $display-md) {
+    width: 30%;
+    margin-right: 60px;
+  }
+  &_second {
+    @media (min-width: $display-sm) {
+      margin-right: 0px;
+    }
+  }
+  @media (min-width: $display-smd) {
+    margin-right: 60px;
+  }
+  &_third {
+    @media (min-width: $display-smd) {
+      margin-right: 0px;
+    }
+    @media (min-width: $display-bg) {
+      width: 31%;
+    }
+  }
+}
+
+.services__img {
+  width: 92px;
+  height: 92px;
+  background: $color-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  margin: 30px 0;
+  img {
+    margin: 0;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.services_title {
+  color: $color-section-brand;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.servises_paragraf {
+  color: $color-main;
+  font-size: 16px;
+  line-height: 1.6;
+}

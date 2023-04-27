@@ -1,0 +1,262 @@
+@import "../assets/variables.scss";
+
+//TODO: Section container
+#section__conteiner{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $display-bg) {
+    flex-direction: column-reverse;
+  }
+}
+
+// TODO: Section clients
+.clients_title {
+  text-transform: uppercase;
+  color: $color-clients-title;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.conteiner_clients {
+  display: grid;
+  max-height: 720px;
+  grid-auto-flow: row;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: $display-sm) {
+    display: none;
+  }
+}
+
+.conteiner_clients_normal {
+  display: none;
+  @media (min-width: $display-sm) {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 768px;
+  }
+  @media (min-width: $display-bg) {
+    padding: 30px 100px 60px;
+  }
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  position: relative;
+  object-fit: cover;
+  @media (min-width: $display-sm) {
+    width: 33.33%;
+  }
+  @media (min-width: $display-smd) {
+    width: 25%;
+  }
+  img {
+    object-fit: cover;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  &_one {
+    background: $bg-client-one;
+    @media (min-width: $display-bg) {
+      border-radius: 12px 0 0 0;
+    }
+  }
+  &_two {
+    background: $bg-client-two;
+  }
+  &_three {
+    background: $bg-client-three;
+  }
+  &_four {
+    background: $bg-client-four;
+    @media (min-width: $display-bg) {
+      border-radius: 0 12px 0 0;
+    }
+  }
+  &_five {
+    background: $bg-client-five;
+  }
+  &_six {
+    background: $bg-client-six;
+  }
+  &_seven {
+    background: $bg-client-seven;
+  }
+  &_eight {
+    background: $bg-client-eight;
+  }
+  &_nine {
+    background: $bg-client-nine;
+    @media (min-width: $display-bg) {
+      border-radius: 0 0 0 12px;
+    }
+  }
+  &_ten {
+    background: $bg-client-ten;
+  }
+  &_eleven {
+    background: $bg-client-eleven;
+  }
+  &_twelve {
+    background: $bg-client-twelve;
+    @media (min-width: $display-bg) {
+      border-radius: 0 0 12px 0;
+    }
+  }
+}
+
+//TODO: Section publications
+#publications{
+  padding: 30px 30px 0;
+  background: $color-bg-section;
+  @media(min-width: $display-sm){
+    padding: 30px 60px 0;
+  }
+  @media (min-width: $display-bg) {
+    padding: 30px 160px 0;
+  }
+}
+
+.section__title_publication{
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.publications{
+  @media (min-width: $display-sm) {
+    display: grid;
+    grid-template-areas: 
+    "first . second"
+    "first . ."
+    "third third third";
+  }
+  @media (min-width: $display-smd) {
+    display: flex;
+  }
+}
+
+.publication{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img{
+    @media (min-width: $display-smd) {
+      height: 200px;
+    }
+  }
+  @media (min-width: $display-smd) {
+    width: 31.2%;
+  }
+  @media (min-width: $display-md) {
+    width: 33%;
+  }
+  &_first{
+    grid-area: first;
+    @media (min-width: $display-sm) {
+      margin-right: 30px;
+    }
+  }
+  &_second{
+    grid-area: second;
+    @media (min-width: $display-smd) {
+      margin-right: 30px;
+    }
+  }
+  &_third{
+    grid-area: third;
+  }
+  
+}
+
+.publication_img{
+  @media (min-width: $display-sm) {
+    display: none;
+  }
+  @media (min-width: $display-smd) {
+    display: inline-block;
+  }
+  &_sm{
+    @media (min-width: $display-sm) {
+      display: inline-block;
+    }
+    @media (min-width: $display-smd) {
+      display: none;
+    }
+  }
+}
+
+.publication_info{
+  padding: 30px;
+  background: $color-main;
+  margin-bottom: 30px;
+  border-radius: 0 0 8px 8px;
+  @media (min-width: $display-smd) {
+    margin-bottom: 0;
+  }
+  &_first, &_second{
+    @media(min-width: $display-sm){
+      min-height: 314px;
+    }
+    @media (min-width: $display-smd) {
+      min-height: 356px;
+    }
+    @media (min-width: $display-md) {
+      min-height: 250px;
+    }
+    @media (min-width: $display-bg) {
+      min-height: 272px;
+    }
+  }
+  &_last{
+    margin: 0;
+    @media (min-width: $display-smd) {
+      min-height: 356px;
+    }
+    @media (min-width: $display-md) {
+      min-height: 250px;
+    }
+    @media (min-width: $display-bg) {
+      min-height: 272px;
+    }
+  }
+}
+
+.publication_title{
+  color: $color-section-brand;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.publication_date{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $color-section-text;
+  margin-top: 15px;
+}
+
+.publication_line{
+  min-width: 255px;
+  height: 4px;
+  background: $color-publications-line;
+  margin: 15px 0;
+  @media (min-width: $display-smd) {
+    min-width: 220px;
+  }
+}
+
+.publication_text{
+  margin: 0;
+  line-height: 1.5;
+  color: $color-black;
+}

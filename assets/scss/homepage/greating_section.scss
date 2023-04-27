@@ -1,0 +1,66 @@
+@import "../assets/variables.scss";
+
+//TODO: Greating
+.section__greating {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 129px 0 30px;
+  grid-area: greating;
+  width: 100%;
+  @media (min-width: $display-sm) {
+    padding-top: 269px;
+  }
+  @media (min-width: $display-smd) {
+    padding-top: 210px;
+  }
+  @media (min-width: $display-md) {
+    padding-top: 230px;
+  }
+  @media (min-width: $display-bg) {
+    padding-top: 340px;
+  }
+}
+
+.title__greating {
+  font-weight: 700;
+  font-size: 38px;
+  color: $color-main;
+  text-align: center;
+  margin: 0 85px;
+  min-width: 206px;
+  grid-area: greating_title;
+  @media (min-width: $display-sm) {
+    width: 100%;
+  }
+}
+
+.scroll_button {
+  margin-top: 159px;
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    .svg__circle,
+    .svg__path {
+      stroke: #f0145a;
+    }
+  }
+  @media (min-width: $display-sm) {
+    margin-top: 422px;
+  }
+  @media (min-width: $display-smd) {
+    margin-top: 300px;
+  }
+  @media (min-width: $display-md) {
+    margin-top: 310px;
+  }
+  @media (min-width: $display-bg) {
+    margin-top: 405px;
+  }
+}

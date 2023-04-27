@@ -1,0 +1,118 @@
+.container__servises {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 768px) {
+  .container__servises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 1920px) {
+  .container__servises {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+
+.section__link {
+  display: inline-block;
+  color: #24A3FF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.section__title {
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 10px 0 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .section__title {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .services__item {
+    width: 45%;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .services__item {
+    width: 28%;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .services__item {
+    width: 30%;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .services__item_second {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .services__item {
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .services__item_third {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1920px) {
+  .services__item_third {
+    width: 31%;
+  }
+}
+
+.services__img {
+  width: 92px;
+  height: 92px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  margin: 30px 0;
+}
+.services__img img {
+  margin: 0;
+  width: 64px;
+  height: 64px;
+}
+
+.services_title {
+  color: #24A3FF;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.servises_paragraf {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=section_servises.css.map */

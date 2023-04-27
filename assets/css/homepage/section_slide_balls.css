@@ -1,0 +1,36 @@
+.slide_bolls {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1920px) {
+  .slide_bolls_team {
+    display: none;
+  }
+}
+.slide_bolls_about {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .slide_bolls_about {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+.slide_boll {
+  width: 16px;
+  height: 16px;
+  opacity: 0.2;
+  border-radius: 360px;
+  border: none;
+  background: #24A3FF;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.slide_boll:hover, .slide_boll_active {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=section_slide_balls.css.map */

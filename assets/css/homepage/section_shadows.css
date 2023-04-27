@@ -1,0 +1,17 @@
+.firs_shadow {
+  background: #CACADB;
+  height: 10px;
+  min-width: 335px;
+  margin: 0 20px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.second_shadow {
+  background: #E7E7F2;
+  height: 10px;
+  min-width: 295px;
+  margin: 0 40px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+/*# sourceMappingURL=section_shadows.css.map */
