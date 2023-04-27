@@ -1,4 +1,4 @@
-//TODO: Header
+@import 'variables';
 
 #main {
   position: relative;
@@ -10,6 +10,7 @@
     #643e72 87.46%
   );
   border-radius: 0px 0px 12px 12px;
+  padding-bottom: 60px;
 }
 
 .backgraund__image {
@@ -243,8 +244,8 @@
   font-size: 38px;
   color: $color-text;
   text-align: center;
-  margin: 0;
-  width: 206px;
+  margin: 0 85px;
+  min-width: 206px;
   grid-area: greating_title;
   @media (min-width: $display-sm) {
     width: 100%;
@@ -441,21 +442,20 @@
   }
 }
 
-.services__link {
+.section__link {
   display: inline-block;
-  margin-bottom: 10px;
   color: $color-services-title;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
 }
 
-.section__services_title {
+.section__title {
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 0;
+  margin: 10px 0 0 ;
   font-weight: 700;
   font-size: 30px;
   @media (min-width: $display-sm) {
@@ -546,9 +546,130 @@
   border-radius: 0px 0px 12px 12px;
 }
 
+//TODO: Team section
+.section__team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.person{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  @media(min-width: $display-sm){
+    padding: 60px 60px 30px;
+  }
+  @media(min-width: $display-smd){
+    flex-direction: row;
+  }
+}
+
+.person_img{
+  @media (min-width: $display-sm) {
+    display: none;
+  }
+}
+
+.person_img_sm{
+  display: none;
+  @media (min-width: $display-sm) {
+    display: inline-block;
+  }
+  @media (min-width: $display-smd) {
+    display: none;
+  }
+}
+
+.person_img_smd{
+  display: none;
+  @media (min-width: $display-smd) {
+    display: inline-block;
+  }
+  @media (min-width: $display-md) {
+    display: none;
+  }
+}
+
+.person_img_md{
+  display: none;
+  @media (min-width: $display-md) {
+    display: inline-block;
+  }
+}
+
+
+.person__info{
+  background-color: $color-team-section;
+  border-radius:0 0 12px 12px; 
+  padding: 30px 22px;
+  @media (min-width: $display-smd) {
+    border-radius:0 12px 12px 0; 
+  }
+  @media (min-width: $display-md) {
+    padding-right: 70px;
+  }
+}
+
+.section__title_team{
+  font-size: 30px;
+  margin-top: 5px;
+  @media (min-width: $display-sm) {
+    font-size: 38px;
+  }
+}
+
+.name{
+  font-weight: 700;
+  font-size: 16px;
+  color: $color-team-text;
+  margin: 30px 115px 6px 0;
+}
+
+.job-title{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.57;
+  color: $color-team-text;
+}
+
+// TODO: Slide bolls
+
+.slide_bolls{
+  display: flex;
+  justify-content: center;  
+  &_team{
+    @media(min-width: $display-bg){
+      display: none;
+    }
+  }
+  &_about{
+    display: none;
+  }
+}
+
+
+.slide_boll{
+  width: 16px;
+  height: 16px;
+  opacity: 0.2;
+  border-radius: 360px;
+  border: none;
+  background: $color-services-title;
+  cursor: pointer;
+  margin-right: 15px;
+  &:hover, &_active{
+    opacity: 1;
+  }
+}
 
 
 
-.person {
-  margin-top: 100px;
+// TODO: Section clients
+
+.clients_title{
+  text-transform: uppercase;
+  color: $color-clients-title;
+  margin: 0;
+  text-align: center;
 }

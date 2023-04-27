@@ -66,6 +66,7 @@ ul {
   overflow: hidden;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   border-radius: 0px 0px 12px 12px;
+  padding-bottom: 60px;
 }
 
 .backgraund__image {
@@ -334,8 +335,8 @@ ul {
   font-size: 38px;
   color: #FFFFFF;
   text-align: center;
-  margin: 0;
-  width: 206px;
+  margin: 0 85px;
+  min-width: 206px;
   grid-area: greating_title;
 }
 @media (min-width: 768px) {
@@ -566,26 +567,25 @@ ul {
   }
 }
 
-.services__link {
+.section__link {
   display: inline-block;
-  margin-bottom: 10px;
   color: #24A3FF;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
 }
 
-.section__services_title {
+.section__title {
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 0;
+  margin: 10px 0 0;
   font-weight: 700;
   font-size: 30px;
 }
 @media (min-width: 768px) {
-  .section__services_title {
+  .section__title {
     font-size: 38px;
   }
 }
@@ -680,8 +680,144 @@ ul {
   border-radius: 0px 0px 12px 12px;
 }
 
+.section__team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
 .person {
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .person {
+    padding: 60px 60px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .person {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .person_img {
+    display: none;
+  }
+}
+
+.person_img_sm {
+  display: none;
+}
+@media (min-width: 768px) {
+  .person_img_sm {
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  .person_img_sm {
+    display: none;
+  }
+}
+
+.person_img_smd {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .person_img_smd {
+    display: inline-block;
+  }
+}
+@media (min-width: 1440px) {
+  .person_img_smd {
+    display: none;
+  }
+}
+
+.person_img_md {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .person_img_md {
+    display: inline-block;
+  }
+}
+
+.person__info {
+  background-color: #F5F5FA;
+  border-radius: 0 0 12px 12px;
+  padding: 30px 22px;
+}
+@media (min-width: 1024px) {
+  .person__info {
+    border-radius: 0 12px 12px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .person__info {
+    padding-right: 70px;
+  }
+}
+
+.section__title_team {
+  font-size: 30px;
+  margin-top: 5px;
+}
+@media (min-width: 768px) {
+  .section__title_team {
+    font-size: 38px;
+  }
+}
+
+.name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #B3B3BA;
+  margin: 30px 115px 6px 0;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #B3B3BA;
+}
+
+.slide_bolls {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1920px) {
+  .slide_bolls_team {
+    display: none;
+  }
+}
+.slide_bolls_about {
+  display: none;
+}
+
+.slide_boll {
+  width: 16px;
+  height: 16px;
+  opacity: 0.2;
+  border-radius: 360px;
+  border: none;
+  background: #24A3FF;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.slide_boll:hover, .slide_boll_active {
+  opacity: 1;
+}
+
+.clients_title {
+  text-transform: uppercase;
+  color: #323264;
+  margin: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
