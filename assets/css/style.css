@@ -710,22 +710,43 @@ ul {
 }
 
 .person_bg {
-  background-image: url(https://github.com/illiashabloskyi/hillel_hw_final/blob/main/images/png/team/person_1.png);
+  background-image: url("../../images/jpg/person-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+  border-radius: 12px 12px 0 0;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  .person_bg {
+    min-width: 400px;
+    border-radius: 12px 0 0 12px;
+  }
+}
+@media (min-width: 1440px) {
+  .person_bg {
+    min-height: 324px;
+  }
 }
 
 .person__info {
   background-color: #F5F5FA;
   border-radius: 0 0 12px 12px;
-  padding: 30px 22px;
+  padding: 30px 30px;
+}
+@media (min-width: 1440px) {
+  .person__info {
+    padding-right: 70px;
+  }
 }
 @media (min-width: 1024px) {
   .person__info {
     border-radius: 0 12px 12px 0;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .person__info {
-    padding-right: 70px;
+    padding-right: 30px;
   }
 }
 
