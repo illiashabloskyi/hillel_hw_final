@@ -32,47 +32,8 @@
   }
 }
 
-@media (min-width: 768px) {
-  .person_img {
-    display: none;
-  }
-}
-
-.person_img_sm {
-  display: none;
-}
-@media (min-width: 768px) {
-  .person_img_sm {
-    display: inline-block;
-  }
-}
-@media (min-width: 1024px) {
-  .person_img_sm {
-    display: none;
-  }
-}
-
-.person_img_smd {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .person_img_smd {
-    display: inline-block;
-  }
-}
-@media (min-width: 1440px) {
-  .person_img_smd {
-    display: none;
-  }
-}
-
-.person_img_md {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .person_img_md {
-    display: inline-block;
-  }
+.person_bg {
+  background-image: url(https://github.com/illiashabloskyi/hillel_hw_final/blob/main/images/png/team/person_1.png);
 }
 
 .person__info {

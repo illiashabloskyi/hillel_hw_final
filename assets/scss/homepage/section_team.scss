@@ -7,7 +7,7 @@
   align-items: center;
   padding-bottom: 60px;
   @media (min-width: $display-bg) {
-    padding-bottom: 0px;
+    padding-bottom: 0px;    
   }
 }
 .person {
@@ -26,37 +26,8 @@
   }
 }
 
-.person_img {
-  @media (min-width: $display-sm) {
-    display: none;
-  }
-}
-
-.person_img_sm {
-  display: none;
-  @media (min-width: $display-sm) {
-    display: inline-block;
-  }
-  @media (min-width: $display-smd) {
-    display: none;
-  }
-}
-
-.person_img_smd {
-  display: none;
-  @media (min-width: $display-smd) {
-    display: inline-block;
-  }
-  @media (min-width: $display-md) {
-    display: none;
-  }
-}
-
-.person_img_md {
-  display: none;
-  @media (min-width: $display-md) {
-    display: inline-block;
-  }
+.person_bg{
+  background-image: url(https://github.com/illiashabloskyi/hillel_hw_final/blob/main/images/png/team/person_1.png);
 }
 
 .person__info {

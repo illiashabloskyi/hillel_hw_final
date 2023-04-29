@@ -531,45 +531,40 @@
   .services__wrapper {
     display: flex;
     flex-wrap: wrap;
+    min-width: 648px;
+  }
+}
+@media (min-width: 1024px) {
+  .services__wrapper {
+    min-width: 904px;
   }
 }
 
 @media (min-width: 768px) {
   .services__item {
-    width: 45%;
+    width: calc(50% - 30px);
     margin-right: 60px;
   }
 }
 @media (min-width: 1024px) {
   .services__item {
-    width: 28%;
-    margin-right: 60px;
-  }
-}
-@media (min-width: 1440px) {
-  .services__item {
-    width: 30%;
+    width: calc(33.33% - 40px);
     margin-right: 60px;
   }
 }
 @media (min-width: 768px) {
-  .services__item_second {
+  .services__item:nth-of-type(2), .services__item:nth-of-type(4), .services__item:nth-of-type(6) {
     margin-right: 0px;
   }
 }
 @media (min-width: 1024px) {
-  .services__item {
+  .services__item:nth-of-type(2), .services__item:nth-of-type(4) {
     margin-right: 60px;
   }
 }
 @media (min-width: 1024px) {
-  .services__item_third {
-    margin-right: 0px;
-  }
-}
-@media (min-width: 1920px) {
-  .services__item_third {
-    width: 31%;
+  .services__item:nth-of-type(3) {
+    margin-right: 0;
   }
 }
 
@@ -651,47 +646,8 @@
   }
 }
 
-@media (min-width: 768px) {
-  .person_img {
-    display: none;
-  }
-}
-
-.person_img_sm {
-  display: none;
-}
-@media (min-width: 768px) {
-  .person_img_sm {
-    display: inline-block;
-  }
-}
-@media (min-width: 1024px) {
-  .person_img_sm {
-    display: none;
-  }
-}
-
-.person_img_smd {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .person_img_smd {
-    display: inline-block;
-  }
-}
-@media (min-width: 1440px) {
-  .person_img_smd {
-    display: none;
-  }
-}
-
-.person_img_md {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .person_img_md {
-    display: inline-block;
-  }
+.person_bg {
+  background-image: url(https://github.com/illiashabloskyi/hillel_hw_final/blob/main/images/png/team/person_1.png);
 }
 
 .person__info {

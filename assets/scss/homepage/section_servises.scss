@@ -42,37 +42,36 @@
   @media (min-width: $display-sm) {
     display: flex;
     flex-wrap: wrap;
+    min-width: 648px;
+  }
+  @media(min-width: $display-smd){
+    min-width: 904px;
   }
 }
 
 .services__item {
   @media (min-width: $display-sm) {
-    width: 45%;
+    width: calc(50% - 30px);
     margin-right: 60px;
   }
   @media (min-width: $display-smd) {
-    width: 28%;
+    width: calc(33.33% - 40px);
     margin-right: 60px;
   }
-  @media (min-width: $display-md) {
-    width: 30%;
-    margin-right: 60px;
-  }
-  &_second {
+  &:nth-of-type(2), &:nth-of-type(4), &:nth-of-type(6) {
     @media (min-width: $display-sm) {
       margin-right: 0px;
     }
   }
-  @media (min-width: $display-smd) {
-    margin-right: 60px;
+  &:nth-of-type(2), &:nth-of-type(4){
+    @media(min-width: $display-smd) {
+      margin-right: 60px;
+    } 
   }
-  &_third {
-    @media (min-width: $display-smd) {
-      margin-right: 0px;
-    }
-    @media (min-width: $display-bg) {
-      width: 31%;
-    }
+  &:nth-of-type(3){
+    @media(min-width: $display-smd) {
+      margin-right: 0;
+    } 
   }
 }
 
