@@ -25,6 +25,10 @@
     #643e72 87.46%
   );
   border-radius: 0px 0px 12px 12px;
+  padding-bottom: 30px;
+  @media (min-width: $display-sm) {
+    padding-bottom: 0;
+  }
 }
 
 .header {
@@ -261,6 +265,7 @@
 }
 
 .services__item {
+  margin-bottom: 30px;
   @media (min-width: $display-sm) {
     width: calc(50% - 30px);
     margin-right: 60px;
@@ -295,7 +300,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  margin: 30px 0;
+  margin: 0 0 30px;
   img {
     margin: 0;
     width: 64px;
@@ -316,6 +321,7 @@
   color: $color-main;
   font-size: 16px;
   line-height: 1.6;
+  margin: 0;
 }
 
 // TODO: Shadow

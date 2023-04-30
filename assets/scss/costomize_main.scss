@@ -11,7 +11,10 @@
     #643e72 87.46%
   );
   border-radius: 0px 0px 12px 12px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  @media (min-width: $display-sm) {
+    padding-bottom: 0;
+  }
 }
 
 .backgraund__image {
@@ -459,6 +462,9 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+  margin: 0;
+  height: 17px;
+  letter-spacing: 1px;
   &:hover{
     .section__link_arow{
       stroke: $link-active-color;
@@ -475,8 +481,11 @@
   margin: 10px 0 0;
   font-weight: 700;
   font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   @media (min-width: $display-sm) {
     font-size: 38px;
+    margin-bottom: 60px;
   }
 }
 
@@ -492,9 +501,11 @@
 }
 
 .services__item {
+  margin-bottom: 30px;
   @media (min-width: $display-sm) {
     width: calc(50% - 30px);
     margin-right: 60px;
+    margin-bottom: 60px;
   }
   @media (min-width: $display-smd) {
     width: calc(33.33% - 40px);
@@ -503,6 +514,7 @@
   &:nth-of-type(2), &:nth-of-type(4), &:nth-of-type(6) {
     @media (min-width: $display-sm) {
       margin-right: 0px;
+      margin-bottom: 60px;
     }
   }
   &:nth-of-type(2), &:nth-of-type(4){
@@ -525,7 +537,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  margin: 30px 0;
+  margin: 0 0 30px;
   img {
     margin: 0;
     width: 64px;
@@ -546,6 +558,7 @@
   color: $color-main;
   font-size: 16px;
   line-height: 1.6;
+  margin: 0;
 }
 
 // TODO: Shadow

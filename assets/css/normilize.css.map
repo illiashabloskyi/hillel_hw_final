@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/normilize.scss","../scss/variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA,OCdgC;;ADehC;EAEE,OCf8B;;;ADmBlC;EACE;EACA","file":"normilize.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/normilize.scss","../scss/variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;EACA,OClBgC;;ADmBhC;EAEE,OCnB8B;;;ADuBlC;EACE;EACA","file":"normilize.css"}
