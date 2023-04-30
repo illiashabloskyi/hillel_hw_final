@@ -216,6 +216,16 @@
   }
 }
 
+.navigation__menu{
+  font-weight: 700;
+  font-size: 16px;
+  &:hover{
+    color: $link-active-color;
+    border-bottom: 3px solid $link-active-color;
+    padding-bottom: 3px;
+  }
+}
+
 //TODO: Greating
 .section__greating {
   display: flex;
@@ -553,6 +563,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 60px;
+  overflow: hidden;
   @media (min-width: $display-bg) {
     padding-bottom: 0px;    
   }
@@ -656,9 +667,11 @@
   background: $color-section-brand;
   cursor: pointer;
   margin-right: 15px;
-  &:hover,
   &_active {
     opacity: 1;
+  }
+  &:hover{
+    opacity: 0.6;
   }
 }
 

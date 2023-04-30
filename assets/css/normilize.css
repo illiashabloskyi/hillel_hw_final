@@ -16,7 +16,6 @@ a {
   color: #FFFFFF;
 }
 a:hover, a:focus {
-  cursor: pointer;
   color: #F0145A;
 }
 

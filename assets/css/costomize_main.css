@@ -237,6 +237,16 @@
   }
 }
 
+.navigation__menu {
+  font-weight: 700;
+  font-size: 16px;
+}
+.navigation__menu:hover {
+  color: #F0145A;
+  border-bottom: 3px solid #F0145A;
+  padding-bottom: 3px;
+}
+
 .section__greating {
   display: flex;
   justify-content: center;
@@ -617,6 +627,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 @media (min-width: 1920px) {
   .section__team {
@@ -742,8 +753,11 @@
   cursor: pointer;
   margin-right: 15px;
 }
-.slide_boll:hover, .slide_boll_active {
+.slide_boll_active {
   opacity: 1;
+}
+.slide_boll:hover {
+  opacity: 0.6;
 }
 
 #section__conteiner {
