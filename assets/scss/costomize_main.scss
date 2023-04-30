@@ -291,8 +291,6 @@
   }
 }
 
-
-
 //TODO: Navigation
 
 .section__navigation {
@@ -455,11 +453,18 @@
 }
 
 .section__link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: $color-section-brand;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+  &:hover{
+    .section__link_arow{
+      stroke: $link-active-color;
+    }
+  }
+  
 }
 
 .section__title {
@@ -532,6 +537,9 @@
   color: $color-section-brand;
   font-weight: 700;
   font-size: 22px;
+  &:hover{
+    color: $link-active-color;
+  }
 }
 
 .servises_paragraf {
@@ -714,7 +722,7 @@
     min-width: 768px;
   }
   @media (min-width: $display-bg) {
-    padding: 30px 100px 60px;
+    padding: 0 100px 60px;
   }
 }
 
@@ -813,7 +821,6 @@
     display: grid;
     grid-template-areas: 
     "first . second"
-    "first . ."
     "third third third";
   }
   @media (min-width: $display-smd) {
@@ -836,38 +843,48 @@
   @media (min-width: $display-md) {
     width: 33%;
   }
-  &_first{
+  &:nth-of-type(1){
     grid-area: first;
     @media (min-width: $display-sm) {
       margin-right: 30px;
     }
   }
-  &_second{
+  &:nth-of-type(2){
     grid-area: second;
     @media (min-width: $display-smd) {
       margin-right: 30px;
     }
   }
-  &_third{
+  &:nth-of-type(3){
     grid-area: third;
   }
   
 }
 
 .publication_img{
-  @media (min-width: $display-sm) {
-    display: none;
+  &_first{
+    background-image: url('../../images/png/publications/cover_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:200px;
+    border-radius: 12px 12px 0 0;
+    background-size: cover;
   }
-  @media (min-width: $display-smd) {
-    display: inline-block;
+  &_second{
+    background-image: url('../../images/png/publications/cover_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:200px;
+    border-radius: 12px 12px 0 0;
+    background-size: cover;
   }
-  &_sm{
-    @media (min-width: $display-sm) {
-      display: inline-block;
-    }
-    @media (min-width: $display-smd) {
-      display: none;
-    }
+  &_third{
+    background-image: url('../../images/png/publications/cover_3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:200px;
+    border-radius: 12px 12px 0 0;
+    background-size: cover;
   }
 }
 
@@ -911,6 +928,9 @@
   color: $color-section-brand;
   font-weight: 700;
   font-size: 16px;
+  &:hover{
+    color: $link-active-color;
+  }
 }
 
 .publication_date{

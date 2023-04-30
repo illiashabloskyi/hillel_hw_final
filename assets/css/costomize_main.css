@@ -515,11 +515,15 @@
 }
 
 .section__link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: #24A3FF;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+}
+.section__link:hover .section__link_arow {
+  stroke: #F0145A;
 }
 
 .section__title {
@@ -598,6 +602,9 @@
   color: #24A3FF;
   font-weight: 700;
   font-size: 22px;
+}
+.services_title:hover {
+  color: #F0145A;
 }
 
 .servises_paragraf {
@@ -804,7 +811,7 @@
 }
 @media (min-width: 1920px) {
   .conteiner_clients_normal {
-    padding: 30px 100px 60px;
+    padding: 0 100px 60px;
   }
 }
 
@@ -916,7 +923,7 @@
 @media (min-width: 768px) {
   .publications {
     display: grid;
-    grid-template-areas: "first . second" "first . ." "third third third";
+    grid-template-areas: "first . second" "third third third";
   }
 }
 @media (min-width: 1024px) {
@@ -945,45 +952,49 @@
     width: 33%;
   }
 }
-.publication_first {
+.publication:nth-of-type(1) {
   grid-area: first;
 }
 @media (min-width: 768px) {
-  .publication_first {
+  .publication:nth-of-type(1) {
     margin-right: 30px;
   }
 }
-.publication_second {
+.publication:nth-of-type(2) {
   grid-area: second;
 }
 @media (min-width: 1024px) {
-  .publication_second {
+  .publication:nth-of-type(2) {
     margin-right: 30px;
   }
 }
-.publication_third {
+.publication:nth-of-type(3) {
   grid-area: third;
 }
 
-@media (min-width: 768px) {
-  .publication_img {
-    display: none;
-  }
+.publication_img_first {
+  background-image: url("../../images/png/publications/cover_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  border-radius: 12px 12px 0 0;
+  background-size: cover;
 }
-@media (min-width: 1024px) {
-  .publication_img {
-    display: inline-block;
-  }
+.publication_img_second {
+  background-image: url("../../images/png/publications/cover_2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  border-radius: 12px 12px 0 0;
+  background-size: cover;
 }
-@media (min-width: 768px) {
-  .publication_img_sm {
-    display: inline-block;
-  }
-}
-@media (min-width: 1024px) {
-  .publication_img_sm {
-    display: none;
-  }
+.publication_img_third {
+  background-image: url("../../images/png/publications/cover_3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  border-radius: 12px 12px 0 0;
+  background-size: cover;
 }
 
 .publication_info {
@@ -1040,6 +1051,9 @@
   color: #24A3FF;
   font-weight: 700;
   font-size: 16px;
+}
+.publication_title:hover {
+  color: #F0145A;
 }
 
 .publication_date {
