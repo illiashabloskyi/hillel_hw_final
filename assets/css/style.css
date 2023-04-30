@@ -719,11 +719,6 @@ ul {
   padding-bottom: 60px;
   overflow: hidden;
 }
-@media (min-width: 1920px) {
-  .section__team {
-    padding-bottom: 0px;
-  }
-}
 
 .person {
   display: flex;
@@ -816,22 +811,6 @@ ul {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 1920px) {
-  .slide_bolls_team {
-    display: none;
-  }
-}
-.slide_bolls_about {
-  display: none;
-}
-@media (min-width: 1920px) {
-  .slide_bolls_about {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
-  }
-}
 
 .slide_boll {
   width: 16px;
@@ -853,11 +832,6 @@ ul {
 #section__conteiner {
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 1920px) {
-  #section__conteiner {
-    flex-direction: column-reverse;
-  }
 }
 
 .clients_title {
@@ -980,12 +954,6 @@ ul {
 @media (min-width: 1920px) {
   .client_twelve {
     border-radius: 0 0 12px 0;
-  }
-}
-
-@media (min-width: 1920px) {
-  #section_publications {
-    padding: 0 160px 0;
   }
 }
 

@@ -585,9 +585,6 @@
   align-items: center;
   padding-bottom: 60px;
   overflow: hidden;
-  @media (min-width: $display-bg) {
-    padding-bottom: 0px;    
-  }
 }
 
 .person {
@@ -663,20 +660,6 @@
 .slide_bolls {
   display: flex;
   justify-content: center;
-  &_team {
-    @media (min-width: $display-bg) {
-      display: none;
-    }
-  }
-  &_about {
-    display: none;
-    @media (min-width: $display-bg) {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-      margin-bottom: 60px;
-    }
-  }
 }
 
 .slide_boll {
@@ -701,9 +684,6 @@
 #section__conteiner{
   display: flex;
   flex-direction: column;
-  @media (min-width: $display-bg) {
-    flex-direction: column-reverse;
-  }
 }
 
 // TODO: Section clients
@@ -813,12 +793,6 @@
 }
 
 //TODO: Section publications
-#section_publications{
-  @media (min-width: $display-bg) {
-    padding: 0 160px 0;
-  }
-}
-
 #publications{
   padding: 30px 30px 0;
   background: $color-bg-section;
