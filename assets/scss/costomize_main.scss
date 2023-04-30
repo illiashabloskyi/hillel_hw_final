@@ -813,6 +813,12 @@
 }
 
 //TODO: Section publications
+#section_publications{
+  @media (min-width: $display-bg) {
+    padding: 0 160px 0;
+  }
+}
+
 #publications{
   padding: 30px 30px 0;
   background: $color-bg-section;
