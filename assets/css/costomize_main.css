@@ -241,7 +241,7 @@
   font-weight: 700;
   font-size: 16px;
 }
-.navigation__menu:hover {
+.navigation__menu:hover, .navigation__menu:focus {
   color: #F0145A;
   border-bottom: 3px solid #F0145A;
   padding-bottom: 3px;

@@ -219,7 +219,7 @@
 .navigation__menu{
   font-weight: 700;
   font-size: 16px;
-  &:hover{
+  &:hover, &:focus{
     color: $link-active-color;
     border-bottom: 3px solid $link-active-color;
     padding-bottom: 3px;
